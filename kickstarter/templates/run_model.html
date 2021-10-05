@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class='jumbotron' align="center">
+	<img src='static/img/coffee.jpg' alt='NULL IMAGE' style='width:1940px;height:650px;' class='img-fluid'/>
+<h3> ENTER YOUR KICK STARTER DETAILS </h3>
+</div>
+<br>
+<form action= '' method='POST'>
+	<div class='container'>
+		{{form.hidden_tag()}}
+		<div class='row mb-3'>
+		{{form.kickstarter_name.label(class='col-form-label-lg')}}{{form.kickstarter_name}}
+		<br>
+		{{form.kickstarter_id.label(class='col-form-label-lg')}}{{form.kickstarter_id}}
+		<br>
+
+		{{form.kickstarter_blurb.label(class='col-form-label-lg')}}{{form.kickstarter_blurb}}
+		<br>
+		{{form.kickstarter_staffpick.label(class='col-form-label-lg')}}{{form.kickstarter_staffpick}}
+		
+		<br>
+		<div class="form-group" style="display:inline-block; width:30%;padding-right: 3%;">
+  			{{form.kickstarter_deadline.label(class='col-form-label-lg')}}{{form.kickstarter_deadline}}           
+			</div>
+
+		<div class="form-group" style="display:inline-block; width:30%; padding-left: 3%;">
+		    {{form.kickstarter_created.label(class='col-form-label-lg')}}{{form.kickstarter_created}}
+			</div>
+		
+		<div class="form-group" style="display:inline-block; width:30%; padding-left: 3%;">
+		    {{form.kickstarter_launched.label(class='col-form-label-lg')}}{{form.kickstarter_launched}}
+			</div>
+		{{form.kickstarter_spotlight.label(class='col-form-label-lg')}}{{form.kickstarter_spotlight}}
+		<br>
+		{{form.kickstarter_slug.label(class='col-form-label-lg')}}{{form.kickstarter_slug}}
+		<div class="form-group" style="display:inline-block; width:20%;padding-right: 3%;">
+  			{{form.kickstarter_locationtype.label(class='col-form-label-lg')}}{{form.kickstarter_locationtype}}           
+			</div>
+		<div class="form-group" style="display:inline-block; width:20%;padding-right: 3%;">
+  			{{form.kickstarter_locationdisplayable.label(class='col-form-label-lg')}}{{form.kickstarter_locationdisplayable}}           
+			</div>		
+
+		<div class="form-group" style="display:inline-block; width:20%; padding-left: 3%;">
+		    {{form.kickstarter_locationstate.label(class='col-form-label-lg')}}{{form.kickstarter_locationstate}}
+			</div>
+		<div class="form-group" style="display:inline-block; width:20%; padding-left: 3%;">
+		{{form.kickstarter_country.label(class='col-form-label-lg')}}{{form.kickstarter_country}}
+		</div>
+		<br>
+		{{form.kickstarter_countrydisplayable.label(class='col-form-label-lg')}}{{form.kickstarter_countrydisplayable}}
+		<br>
+		<div class="form-group" style="display:inline-block; width:30%;padding-right: 3%;">
+  			{{form.kickstarter_currency.label(class='col-form-label-lg')}}{{form.kickstarter_currency}}           
+			</div>
+
+		<div class="form-group" style="display:inline-block; width:30%; padding-left: 3%;">
+		    {{form.kickstarter_usdgoal.label(class='col-form-label-lg')}}{{form.kickstarter_usdgoal}}
+			</div>
+		
+		<div class="form-group" style="display:inline-block; width:30%; padding-left: 3%;">
+		    {{form.kickstarter_usdpledge.label(class='col-form-label-lg')}}{{form.kickstarter_usdpledge}}
+			</div>
+		<br>
+		<div class="form-group" style="display:inline-block; width:30%; padding-left: 3%;">
+		    {{form.kickstarter_creatorid.label(class='col-form-label-lg')}}{{form.kickstarter_creatorid}}
+			</div>
+		
+		<div class="form-group" style="display:inline-block; width:30%; padding-left: 3%;">
+		    {{form.kickstarter_creatorname.label(class='col-form-label-lg')}}{{form.kickstarter_creatorname}}
+			</div>
+
+		<div class="form-group" style="display:inline-block; width:30%; padding-left: 3%;">
+		    {{form.kickstarter_locationid.label(class='col-form-label-lg')}}{{form.kickstarter_locationid}}
+			</div>
+		<br>
+
+		<div class="form-group" style="display:inline-block; width:25%; padding-left: 3%;">
+		    {{form.kickstarter_categoryname.label(class='col-form-label-lg')}}{{form.kickstarter_categoryname}}
+			</div>
+		
+		<div class="form-group" style="display:inline-block; width:25%; padding-left: 3%;">
+		    {{form.kickstarter_categoryslug.label(class='col-form-label-lg')}}{{form.kickstarter_categoryslug}}
+			</div>
+	<div class="form-group" style="display:inline-block; width:25%; padding-left: 3%;">
+		    {{form.kickstarter_categoryid.label(class='col-form-label-lg')}}{{form.kickstarter_categoryid}}
+			</div>
+		
+
+			<br>
+		<div class="form-group" style="display:inline-block; width:45%; padding-left: 3%;">
+		    {{form.kickstarter_categoryposition.label(class='col-form-label-lg')}}{{form.kickstarter_categoryposition}}
+			</div>
+		
+		<div class="form-group" style="display:inline-block; width:45%; padding-left: 3%;">
+		    {{form.kickstarter_categoryparentid.label(class='col-form-label-lg')}}{{form.kickstarter_categoryparentid}}
+		</div>
+		{{form.submit}}
+	</div>
+</form>
+
+</div>
+
+
+{% endblock %}

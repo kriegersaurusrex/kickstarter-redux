@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class='jumbotron' align="center">
+	<img src='static/img/coffee1.jpg' alt='NULL IMAGE' style='width:1940px;height:650px;' class='img-fluid'/>
+	<form method='POST'>
+	<h2 align="center"> KICK - STARTER </h2>
+	<h3> Hey, we predict that your Kickstarter "{{form.kickstarter_name.data}}" will {{result}}</h3>
+	
+	</form>
+</div>
+
+
+{% endblock %}

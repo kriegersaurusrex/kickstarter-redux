@@ -1,0 +1,13 @@
+# Kickstarter Details Entry
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<div class="container">
+  <h3>Enter Kickstarter Details</h3>
+  <hr>
+    {{ wtf.quick_form(form) }}
+  <hr>
+  <p>Enter all Data here - We want your success</p>
+  <p><a href="#">Contact Us</a></p>
+</div>
+{% endblock %}
